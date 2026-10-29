@@ -1,0 +1,53 @@
+{
+  "requiredSdkVersion": "~0.1.26",
+  "name": "BbbPluginCodenames",
+  "version": "0.3.3",
+  "javascriptEntrypointUrl": "BbbPluginCodenames.js",
+  "localesBaseUrl": "locales",
+  "dataChannels": [
+    {
+      "name": "gameState",
+      "pushPermission": [
+        "moderator"
+      ],
+      "replaceOrDeletePermission": [
+        "moderator"
+      ]
+    },
+    {
+      "name": "secretKey",
+      "pushPermission": [
+        "moderator"
+      ],
+      "replaceOrDeletePermission": [
+        "moderator"
+      ]
+    },
+    {
+      "name": "intents",
+      "pushPermission": [
+        "all"
+      ],
+      "replaceOrDeletePermission": [
+        "creator",
+        "moderator"
+      ]
+    }
+  ],
+  "settingsSchema": [
+    {
+      "name": "debug",
+      "label": "Enable debug logs",
+      "required": false,
+      "defaultValue": false,
+      "type": "boolean"
+    },
+    {
+      "name": "defaultWordList",
+      "label": "Word list selected by default (pt-BR or en)",
+      "required": false,
+      "defaultValue": "pt-BR",
+      "type": "string"
+    }
+  ]
+}

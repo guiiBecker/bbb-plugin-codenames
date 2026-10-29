@@ -1,0 +1,16 @@
+node_modules
+dist
+dist-tsc
+debian/.debhelper/
+debian/debhelper-build-stamp
+debian/files
+debian/**/copyright
+debian/**/changelog.gz
+debian/**/md5sums
+debian/**/var/www/*
+memory
+playwright-report
+test-results
+.env
+coverage/*
+.asset-staging/

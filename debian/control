@@ -1,0 +1,14 @@
+Source: bbb-plugin-codenames
+Section: web
+Priority: extra
+Maintainer: Mconf <dev@mconf.com>
+Build-Depends: debhelper (>= 13), nodejs (>= 22)
+Standards-Version: 4.1.4
+Homepage: https://github.com/mconf/bbb-plugin-codenames
+
+Package: bbb-plugin-codenames
+Architecture: all
+Depends: ${misc:Depends}, nodejs
+Description: Codenames word game for BigBlueButton sessions
+ Moderators open a Codenames board in the media area where two
+ teams of participants play together in real time.
